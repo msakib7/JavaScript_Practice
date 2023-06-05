@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-10">
+        You can
+        <span class="text-amber-600 font-semibold">edit balence</span>
+      </h1>
+    </header>
+
+    <main>
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+          <div class="bg-sky-300 p-8 rounded">
+            <h3 class="text-2xl font-medium">Deposite</h3>
+            <h3 class="text-3xl font-medium">
+              $<span id="total-deposit">00</span>
+            </h3>
+          </div>
+          <div class="bg-violet-300 p-8 rounded">
+            <h3 class="text-2xl font-medium">Withdraw</h3>
+            <h3 class="text-3xl font-medium">
+              $<span id="total-wihdraw">00</span>
+            </h3>
+          </div>
+          <div class="bg-indigo-300 p-8 rounded">
+            <h3 class="text-2xl font-medium">Total balance</h3>
+            <h3 class="text-3xl font-medium">
+              $<span id="total-balance">1024</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-6">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+          <div class="bg-lime-400 p-4 rounded">
+            <h3 class="text-2xl font-medium">Deposit Balance</h3>
+            <input
+              id="input-deposit"
+              class="p-2 rounded w-6/12 block mt-2"
+              type="text"
+              placeholder="Enter Amount"
+            />
+            <button
+              id="btn-deposit"
+              class="bg-amber-600 mt-2 px-3 py-2 rounded-lg block font-medium hover:bg-black hover:text-amber-600"
+            >
+              Confirm
+            </button>
+          </div>
+
+          <div class="bg-amber-400 p-4 rounded">
+            <h3 class="text-2xl font-medium">Withdraw Balance</h3>
+            <input
+              id="input-withdraw"
+              class="p-2 rounded w-6/12 block mt-2"
+              type="text"
+              placeholder="Enter Amount"
+            />
+            <button
+              id="btn-withdraw"
+              class="bg-amber-600 mt-2 px-3 py-2 rounded-lg block font-medium hover:bg-black hover:text-amber-600"
+            >
+              Confirm
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/bank.js"></script>
+  </body>
+</html>

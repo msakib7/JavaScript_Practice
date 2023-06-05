@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Geometry Genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-3 px-4 block" href="#"
+            >Interactive<br />
+            <span class="navbar-brand fw-light">Geometry Genius</span>
+          </a>
+          <button
+            class="btn btn-primary px-4 text-light fw-bold mx-3"
+            id="btn-blog"
+          >
+            Blog
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main class="container-lg mt-5 mb-5">
+      <section class="main-section d-flex gap-5">
+        <div class="w-75">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card text-center" id="card-id-1">
+                <img
+                  src="./images/triangle.png"
+                  class="img-fluid mx-auto p-3 w-75"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Triangle</h5>
+                  <small>Area (A) = 0.5 x b x h</small>
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 pt-3"
+                  >
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="base-input"
+                      type="text"
+                      placeholder="b"
+                    />
+                    <h6 class="me-3">cm</h6>
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="height-input"
+                      type="text"
+                      placeholder="h"
+                    />
+                    <h6>cm</h6>
+                  </div>
+                  <button
+                    class="btn btn-primary px-4 text-light fw-bold mt-4"
+                    id="btn-calculation-1"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center" id="card-id-2">
+                <img
+                  src="images/rectangle.png"
+                  class="img-fluid mx-auto pt-4 w-75"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rectangle</h5>
+                  <small>Area (A) = w x I</small>
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 pt-3"
+                  >
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="rectangle-width"
+                      type="text"
+                      placeholder="w"
+                    />
+                    <h6 class="me-3">cm</h6>
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="rectangle-hight"
+                      type="text"
+                      placeholder="I"
+                    />
+                    <h6>cm</h6>
+                  </div>
+                  <button
+                    class="btn btn-primary px-4 text-light fw-bold mt-4"
+                    id="btn-calculation-2"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card text-center" id="card-id-3">
+                <img
+                  src="./images/parallelogram.png"
+                  class="img-fluid mx-auto pt-4 w-75 mb-2"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Parallelogram</h5>
+                  <small>Area (A) = b x h</small>
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 pt-3"
+                  >
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      type="text"
+                      id="parallelogram-width"
+                      placeholder="b"
+                    />
+                    <h6 class="me-3">cm</h6>
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="parallelogram-higth"
+                      type="text"
+                      placeholder="h"
+                    />
+                    <h6>cm</h6>
+                  </div>
+                  <button
+                    class="btn btn-primary px-4 text-light fw-bold mt-4"
+                    id="btn-calculation-3"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center" id="card-id-4">
+                <img
+                  src="./images/rhombus.png"
+                  class="img-fluid mx-auto pt-4 w-75"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rhombuse</h5>
+                  <small>Area (A) = d1 x d2 x 0.5 </small>
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 pt-3"
+                  >
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="rhombuse-width"
+                      type="text"
+                      placeholder="d1"
+                    />
+                    <h6 class="me-3">cm</h6>
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="rhombuse-higth"
+                      type="text"
+                      placeholder="d2"
+                    />
+                    <h6>cm</h6>
+                  </div>
+                  <button
+                    class="btn btn-primary px-4 text-light fw-bold mt-4"
+                    id="btn-calculation-4"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center" id="card-id-5">
+                <img
+                  src="./images/pentagon.png"
+                  class="img-fluid mx-auto pt-4 w-50"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pentagon</h5>
+                  <small>Area (A) = 0.5 x p x b</small>
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 pt-3"
+                  >
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="pentagon-perimeter"
+                      type="text"
+                      placeholder="p"
+                    />
+                    <h6 class="me-3">cm</h6>
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="pentagon-apothem"
+                      type="text"
+                      placeholder="b"
+                    />
+                    <h6>cm</h6>
+                  </div>
+                  <button
+                    class="btn btn-primary px-4 text-light fw-bold mt-4"
+                    id="btn-calculation-5"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card text-center" id="card-id-6">
+                <img
+                  src="./images/ellipse.png"
+                  class="img-fluid mx-auto pt-4 w-75"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ellipse</h5>
+                  <small>Area (A) = π ab</small>
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 pt-3"
+                  >
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="ellipse-length-of-semi-major-axis"
+                      type="text"
+                      placeholder="a"
+                    />
+                    <h6 class="me-3">cm</h6>
+                    <input
+                      class="w-25 bg-light bg-gradient border-0"
+                      id="ellipse-length-of-semi-minor-axis"
+                      type="text"
+                      placeholder="b"
+                    />
+                    <h6>cm</h6>
+                  </div>
+                  <button
+                    class="btn btn-primary px-4 text-light fw-bold mt-4"
+                    id="btn-calculation-6"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="area-container w-auto border">
+          <h4 class="text-center pt-3 px-5 pb-2">
+            <span class="border-bottom border-dark border-2"
+              >Area Calculation</span
+            >
+          </h4>
+          <ol id="list-container"></ol>
+        </div>
+      </section>
+    </main>
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/utility.js"></script>
+    <script src="js/calculation.js"></script>
+    <script src="js/blog.js"></script>
+  </body>
+</html>

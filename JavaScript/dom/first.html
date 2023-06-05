@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome to dom</title>
+  </head>
+  <body>
+    <section>
+      <h1>Wellcome to Dom</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis
+        doloribus repudiandae quaerat dicta numquam beatae aliquid qui quo
+        maiores iusto voluptas tempora temporibus nemo officia nisi, delectus at
+        cupiditate.
+      </p>
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About Us</li>
+      </ul>
+    </section>
+
+    <section id="section1">
+      <h1>Wellcome to Dom</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis
+        doloribus repudiandae quaerat dicta numquam beatae aliquid qui quo
+        maiores iusto voluptas tempora temporibus nemo officia nisi, delectus at
+        cupiditate.
+      </p>
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About Us</li>
+      </ul>
+      <button onclick="colorChange()">Change to grey</button>
+      <button id="red-Button">Change to red</button>
+    </section>
+
+    <section>
+      <h1>Event in DOMN</h1>
+      <h3 id="title-status">This is test text</h3>
+      <button onclick="handleOnClick()">Event Button</button>
+      <button onclick="handleOnClickReturn()">Event return Button</button>
+    </section>
+
+    <section style="text-align: center;">
+      <h1>This is for input event</h1>
+      <h3 id="input-text">This is deafult text</h3>
+      <input id="input-field" type="text">
+      <button id="btn-submit">Submit</button>
+    </section>
+
+    <section>
+      <h1 style="text-align: center;margin-top: 100px;">This is for adding new comment</h1>
+      <h2>Add your comment</h2>
+      <div id="comment-container">
+        <h3>This is 1st Comment</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid in neque incidunt, provident, veniam assumenda cupiditate quos quasi explicabo impedit rem sequi architecto ullam dolorum distinctio modi ut debitis atque?</p>
+        <h3>This is 2nd Comment</h3>
+        <p>Eaque modi nam error ipsum debitis necessitatibus molestias fugiat vero praesentium, eveniet amet facere quas nisi ab inventore mollitia. Quod numquam porro vero et ipsa repellendus laudantium vel tenetur earum.</p>
+        <h3>This is 3rd Comment</h3>
+        <p>Nam, qui necessitatibus asperiores quibusdam eum neque expedita magnam dicta corrupti ad rerum, accusantium odio explicabo veritatis, deleniti molestias consectetur. Architecto incidunt adipisci beatae, quo obcaecati iste ipsum reprehenderit quibusdam!</p>
+      </div>
+
+      <div>
+        <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+        <br>
+        <button id="btn-post">Post</button>
+      </div>
+    </section>
+
+    <section>
+      <h1>More Event functions</h1>
+      <div>
+        <button id="btn-more">More Event 1</button>
+        <br>
+        <input id="text-field" type="text">
+        <br>
+        <h3 >delete option</h3>
+        <p id="delete-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis dolorum rem voluptatem aliquid quia?</p>
+        <input id="delete-confirm" type="text" placeholder="Please enter delete">
+        <button id="btn-delete" disabled>Delete</button>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script>
+      document.getElementById('text-field').addEventListener('focus',function(){});
+      // document.getElementById('text-field').addEventListener('keydown',function(){
+      //   console.log(event.target.value);
+      // });
+      document.getElementById('text-field').addEventListener('keyup',function(){
+        console.log(event.target.value);
+      });
+
+      // mouseenter, mousemove, 
+      document.getElementById('btn-more').addEventListener('mouseenter',function(){
+        console.log("Clicked");
+      })
+      // delete button
+      document.getElementById('delete-confirm').addEventListener('keyup',function(event){
+        const text = event.target.value;
+        if(text == 'delete')
+        {
+          document.getElementById('btn-delete').removeAttribute('disabled');
+        }
+        else
+        {
+          document.getElementById('btn-delete').setAttribute('disabled',true);
+        }
+
+      })
+      document.getElementById('btn-delete').addEventListener('click',function(){
+        document.getElementById('delete-text').style.display ='none';
+      })
+
+      
+    </script>
+  </body>
+</html>

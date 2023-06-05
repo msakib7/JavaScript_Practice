@@ -1,0 +1,21 @@
+.navbar {
+    background-color: rgba(16, 144, 216, 0.1) !important;
+    padding: 0 !important;
+}
+.navbar-brand{
+    padding-top: 0 !important;
+}
+.card {
+    height: 400PX;
+}
+
+@media screen and (max-width:576px) {
+    .main-section {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .area-container {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

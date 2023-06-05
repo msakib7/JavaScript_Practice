@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI-Universe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body class="w-75 mx-auto">
+
+    <header class="mt-3">
+      <nav class="navbar bg-warning  rounded-3">
+        <div class="container-fluid justify-content-center">
+          <span class="navbar-brand mb-0 h1">AI Universe Hub</span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- button for re-arrange -->
+      <section class="mt-3">
+        <button id="btn-sort" type="button" class="btn btn-warning w-100">Short by Date</button> 
+      </section>
+
+      <!-- toggler Section -->
+      <section id="toggler-section" class="mt-3 d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-warning " role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </section>
+
+      <!-- Service card -->
+      <section class="mt-3" >
+        <div id="service-card" class="row row-cols-3 g-2">
+          
+
+        </div>
+      </section>
+
+      <!-- See more button -->
+      <section class="mt-3">
+        <button id="btn-seeall" type="button" class="btn btn-warning w-100">See All</button> 
+      </section>
+
+      <!-- See details section -->
+      <section >
+
+        <!-- Modal -->
+        <div class="modal fade modalBody" id="modal-field" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+              <div class="modal-body">
+                <div>
+                  <button type="button" class="btn btn-warning position-absolute top-0 start-100 translate-middle" data-bs-dismiss="modal">X</button>
+                </div>
+                <div id="modal-info" class="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    
+    <!-- Java Script -->
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
